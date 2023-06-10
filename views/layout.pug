@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    title #{title} | Taste and Fun Catering
+    link(rel="stylesheet", href="/CSS/styles.css")
+
+  body
+
+    header#header
+      img(src="/css/images/logo.png", alt="logo")
+      nav(id="main-menu", aria-label="main navigation")
+        ul
+          each link in menu
+           li
+            a(href=link.path) #{link.name}
+         
+
+    main#main
+     block main-content
+
+    footer#footer
+      p &copy; Taste and Fun Catering. All rights reserved | 2023
+      p
+        Website designed by 
+        a(href="https://www.hiralpatel.com") Hiral Patel

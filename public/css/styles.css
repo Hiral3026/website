@@ -1,0 +1,257 @@
+/* Reset default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set font and background color for the body */
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url('./images/background.avif');      
+    /*Image source: https://images.unsplash.com/photo-1507757861675-f14524bb197d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1155&q=80*/
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+  }
+
+ main#main {
+  margin-bottom: 30px;
+}
+
+  /* Style the header */
+  #header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     width: 100%;
+     box-sizing: border-box;
+  }
+
+  #header img {
+    max-width: 150px;
+    margin-left: 200px;
+  }
+  
+  #header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+
+  }
+
+  #header nav ul li {
+    margin-right: 150px;
+    font-size: 20px;
+  }
+
+  #header nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+
+  #header nav ul li a:hover {
+    color: red;
+  }
+
+  #header nav a.active {
+    color: red;
+  }
+  /*Style of header ends here*/
+
+  /*Style for about*/
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+  }
+
+  .about h1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  .about p {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+  }
+
+/* Style for service section */
+#service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+#service h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#service ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#service li {
+  width: 200px;
+    text-align: center;
+    margin: 10px;
+    list-style-type: none;
+}
+
+#service li img {
+  width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+#service li img:hover {
+  transform: scale(1.1);
+}
+
+#service li h3 {
+  margin-top: 25px;
+  font-size: 24px;
+  color: white;
+}
+/* Style for service section ends here */
+
+/*Style for Menu section*/
+#menu h2 {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin: 30px 30px;
+}
+
+#menu p {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+#menu h3 {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+section#menu div.menu-item {
+  margin-bottom: 30px;
+}
+
+section#menu h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+section#menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section#menu li {
+  width: 200px;
+  text-align: center;
+  margin: 10px;
+  list-style-type: none;
+}
+
+section#menu img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+section#menu img:hover {
+  transform: scale(1.1);
+}
+/*Style for menu section ends here*/
+
+/* Style contact section */
+section#contact h2 {
+  text-align: center;
+  color: #fff;
+}
+
+section#contact p {
+  text-align: center;
+  color: #fff;
+  margin: 20px 20px;
+}
+
+section#contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+  
+section#contact input[type="text"],
+section#contact input[type="email"],
+section#contact textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+  
+section#contact button[type="submit"] {
+  padding: 10px 20px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 90px;
+}
+
+section#contact button[type="submit"]:hover {
+  background-color: rosybrown;
+}
+/*Style for contact form ends here*/
+
+/* Style for the footer */
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer p {
+  font-size: 16px;
+}
+/*Style for footer ends here*/
+
+

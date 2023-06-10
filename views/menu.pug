@@ -1,0 +1,60 @@
+extends layout
+
+block main-content
+  section#menu
+    h2 Menu
+    p Check out our mouth-watering menu options below:
+
+    div.menu-item
+      h3 Appetizers
+      ul
+        li
+          img(src="/css/images/spring.avif", alt="Spring Rolls")
+          // https://images.unsplash.com/photo-1669340781012-ae89fbac9fc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80
+
+        li
+          img(src="/css/images/bruschetta.avif", alt="Bruschetta")
+          //https://images.unsplash.com/photo-1630230596557-ad07b433f5c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80
+
+        li
+          img(src="/css/images/mushroom.avif", alt="Stuffed Mushrooms")
+          //https://images.unsplash.com/photo-1617307715850-c6965f2aead4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80
+
+    div.menu-item
+      h3 Main Courses
+      ul
+        li
+          img(src="/css/images/salmon.avif", alt="Grilled Salmon")
+          //https://images.unsplash.com/photo-1519233991914-26a44330ccd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80
+
+        li
+          img(src="/css/images/beef.avif", alt="Beef Tenderloin")
+          //https://images.unsplash.com/photo-1625944226957-10458fe06691?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1033&q=80
+
+        li
+          img(src="/css/images/pasta.avif", alt="Vegetarian Pasta")
+          //https://images.unsplash.com/photo-1516685018646-549198525c1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80
+
+    div.menu-item
+      h3 Desserts
+      ul
+        li
+          img(src="/css/images/cake.avif", alt="Chocolate Cake")
+          //https://images.unsplash.com/photo-1626197036422-02ba66009f4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80
+
+        li
+          img(src="/css/images/creme.avif", alt="Crème Brûlée")
+          //https://plus.unsplash.com/premium_photo-1667808384851-8f041275a8c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80
+
+        li
+          img(src="/css/images/tart.avif", alt="Fruit Tart")
+          //https://images.unsplash.com/photo-1566760375903-061dfd31c175?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80
+
+  section#contact
+    h2 Contact Us!
+    p We'd love to hear from you! Contact us for inquiries or bookings:
+    form(action="/contact", method="post")
+      input(type="text", name="name", placeholder="Your Name", required)
+      input(type="email", name="email", placeholder="Your Email", required)
+      textarea(name="message", placeholder="Your Message", required)
+      button(type="submit") Submit

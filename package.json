@@ -1,0 +1,27 @@
+{
+  "name": "assignment-1",
+  "version": "1.0.0",
+  "description": "A website using Node.js with Express and Pug",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hiral3026/website.git"
+  },
+  "author": "Hiral Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hiral3026/website/issues"
+  },
+  "homepage": "https://github.com/Hiral3026/website#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^5.6.0",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
